@@ -6,6 +6,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
 		return console.log('Not connect to mongodb server');
 	}
 	console.log('Connected');
+
+	// --->> create todos
 	// db.collection('Todos').insertOne({
 	// 	text: 'some this text',
 	// 	complite: false
@@ -16,6 +18,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
 	// 	console.log(JSON.stringify(result.ops, undefined, 2));
 	// });
 
+	// --->> create users
 	// db.collection('Users').insertOne({
 	// 	_id: 2,
 	// 	name: 'risman',
